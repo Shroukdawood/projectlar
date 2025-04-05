@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('course_code')->unique();
             $table->string('description')->nullable();
             $table->string('price');
-            $table->number('number_of_students')->default(0);
+            $table->string('number_of_students')->default('0');
             $table->timestamps();
         });
     }
